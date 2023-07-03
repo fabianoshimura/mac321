@@ -1,0 +1,21 @@
+
+Exercício: Algoritmos de ordenação
+Escreva um programa OO que implemente classes de ordenação para diferentes algoritmos de ordenação e diferentes tipos de dados. Seu código deve ter uma classe (ou interface) Sorter que possui um método sort. Deve ser possível instanciar um objeto com qualquer um dos seguintes algoritmos de ordenação:
+
+QuickSort
+MergeSort
+InsertionSort
+Deve ser possível também instanciar um objeto Sorter e chamar a função sort com pelo menos os seguinte 4 tipos de arrays:
+
+sort (int[] array)
+sort (double[] array)
+sort (String[] array)
+sort (Racional[] array)
+Para escrever o seu código, considere os seguintes casos de uso, um por vez e nessa ordem  (ou seja, escreva o código pensando apenas no cenário 1, depois o refatore para o cenário 2, e depois para o cenário 3):
+
+Cenário 1: Cada objeto Sorter é chamado sempre com o mesmo algoritmo de ordenação e o mesmo tipo de dados.
+Cenário 2: Cada objeto Sorter é chamado sempre com o mesmo algoritmo, porém possivelmente com tipos de dados diferentes.
+Cenário 3: o mesmo que o cenário anterior, exceto que cada algoritmo pode ser chamado para ordenar de maneira crescente ou decrescente.
+Procure evitar duplicações e redundâncias em seu código (dica: use a interface Comparable do Java e classes e/ou métodos parametrizados).
+
+Lembre-se sempre de escrever uma boa bateria de testes.

@@ -1,0 +1,7 @@
+3
+1
+Shampoo
+10.0
+2
+Sabonete
+5.0

@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "testes_JUnit/Calculadora/lib/junit-platform-console-standalone-1.9.2.jar"
+    ]
+}

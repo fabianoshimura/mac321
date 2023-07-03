@@ -1,0 +1,17 @@
+Escreva um programa que analisa o desempenho de tempo de um ou mais algoritmos de ordenação. Seu programa deve ser flexível para permitir a escolha do algoritmo de ordenação, da ordem de ordenação (crescente ou decrescente) e do tipo de dados do objeto a ser ordenado em tempo de execução. Você deve permitir escolher pelo menos 3 tipos de dados distintos: int, double e String. Para os dois primeiros caso, você deve gerar um vetor de números aleatórios para um dado tamanho. Para strings, você deve selecionar um subconjunto aleatório de palavras do dicionário disponibilizado. 
+
+Para selecionar um elemento aleatório de um array, você pode usar o código abaixo.
+
+import java.util.Random;
+
+public class RandArray {
+    private static Random rand = new Random();
+
+    private static <T> T randomFrom(T... items) { 
+         return items[rand.nextInt(items.length)]; 
+    }
+}
+
+Procure evitar duplicações e redundâncias em seu código (dica: use a interface Comparable do Java e classes e/ou métodos parametrizados).
+
+Lembre-se sempre de escrever uma boa bateria de testes.

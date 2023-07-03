@@ -1,0 +1,6 @@
+Exercício
+Refatore o código disponibilizado de um aplicativo de conversão de temperaturas para que ele isole o cliente AppConversor da instanciação de objetos do tipo Conversor. Use uma fábrica (ou fábrica abstrata) para criar os 3 diferentes conversores de temperatura (De/Para Celsius para Fahrenheit e sem conversão). Note que o conversor concreto é o produto e não temos ainda um método de fábrica ou classe de criador. Se achar conveniente, use o padrão Singleton para evitar duplicar objetos (conversores, fábricas etc).
+
+Depois estenda seu código para permitir também conversões de e para Kelvin, totalizando 7 diferentes conversores. Use o padrão Protótipo para evitar if/elses de criações de objetos.
+
+Por fim, considere como você modificaria seu código para ter uma fábrica de conversores de medidas de distância (km para milhas e vice-versa, por exemplo) no lugar do conversor de temperatura, com o mínimo de mudança no seu código.

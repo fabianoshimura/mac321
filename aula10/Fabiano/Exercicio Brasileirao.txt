@@ -1,0 +1,24 @@
+Sua empresa foi contratada para implementar um aplicativo que permite monitorar a tabela de pontuação do Campeonato Brasileiro de Futebol. O sistema deverá ser alimentado com os resultados de cada jogo por meio de uma interface gráfica. A saída do sistema, ou seja, a Tabela do Brasileirão, deverá ser gerada na mesma interface gráfica.
+
+No entanto, seu cliente já lhe avisou que diferentes formas de entrada e saída de dados poderão ser úteis no futuro e, portanto, você decidiu implementar o sistema baseado no padrão MVC. Além disso, para ter uma ideia rápida de como o sistema irá funcionar, você decidiu implementar rapidamente uma versão puramente em texto do sistema. O cliente lhe entregou o modelo de dados que eles já haviam desenvolvido para representar e atualizar os resultados de jogos. Você se lembrou de um projeto antigo seguindo o padrão MVC cuja visão era parecida (uma tabela de resultados e alguns botões) e, aproveitando a modularidade do paradigma, importou a classe. 
+
+Falta agora desenvolver a parte principal: o controlador, que faz a ligação da visão com o modelo, e colocar tudo para funcionar, adaptando ao problema em questão.
+
+O controlador será simplesmente um laço que, a cada iteração, pergunta o nome de dois times e o número de gols de cada time.
+
+A visão conterá um método que, consultando o modelo, exibe a tabela do brasileirão atualizada.
+
+Implemente o sistema acima utilizando o padrão MVC e faça alguns testes. Você pode mas não precisa usar as classes de modelo e visão fornecidas no repositório da disciplina no gitlab.
+
+Considerações:
+
+O modelo de dados assume que os times são identificados por uma string de 3 letras maiúsculas, por exemplo, SAO representando São Paulo. Você não precisa seguir essa sugestão.
+O modelo de dados conta com uma função populate, que é útil para gerar dados falsos em quantidade e testar o sistema.
+Num sistema MVC típico, há várias visões, controladores e modelos. Como este é apenas um exercício simples, basta desenvolver um único modelo, uma única visão e um único controlador. Você pode depois tentar estender seu sistema com mais visões, controladores e/ou modelos, se quiser. Por exemplo, que tal gerar uma visão de modo de texto?
+A parte que recebe valores do usuário não faz nenhuma verificação nem tratamento de exceção. Procure melhorar essa interface!
+Existem várias escolhas de projeto de como implementar o padrão MVC. Procure ponderar flexibilidade (a capacidade de estender seu sistema), velocidade (a rapidez com que seu sistema é modificado) e complexidade (a dificuldade em entender a sua implementação).
+
+
+Arquivos de exemplo para o exercício sobre MVC e tabela do brasileirão
+
+Clique o link https://gitlab.uspdigital.usp.br/mac0321/tabela-do-brasileirao para abrir o recurso.
