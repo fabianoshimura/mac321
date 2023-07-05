@@ -1,0 +1,34 @@
+Sistema de vendas de ingressos
+
+
+Você foi contratado para desenvolver um sistema de venda e gerenciamento de ingressos para eventos. Cada evento possui:
+
+Código de identificação único
+Descrição
+Data e hora de início
+Local (casa de eventos)
+Quantidade de ingressos disponíveis
+Valor de base do preço do ingresso
+Idade mínima de entrada
+Os clientes precisam se registrar no sistema para a compra de ingressos e fornecer os seguintes dados:
+
+Número de CPF
+Idade
+Nome
+Endereço (Cidade, Estado, País, Logradouro)
+Email
+Número de telefone
+(Em caso de assíduo) Se assinatura está paga.
+Os clientes podem ser eventuais ou assíduos. Clientes assíduos pagam uma mensalidade fixa e possuem desconto de 50% no valor de ingressos, desde que estejam com a assinatura em dia.
+
+Cada ingresso possui (pelo menos) um identificador, pelo qual é possível obter informações sobre o evento e o cliente que o adquiriu. Além disso, os ingressos podem ser entregues em casa (o que gera uma taxa de conveniência) ou retirados no local (antes do dia do evento). Note que um cliente pode possuir mais de um ingresso para o mesmo evento.
+
+O sistema deve possuir um mecanismo de vendas, que calcule o preço final ao cliente e produza relatórios financeiros para o gerente. Cada venda possui um código do evento, código do ingresso e valor da venda, calculado da seguinte forma. Clientes assíduos com a mensalidade em dia e/ou clientes eventuais menores de 25 anos pagam 50% do valor base + 12% de imposto (cobrado sobre valor efetivamente pago) + taxa de conveniência (caso optem pela entrega, sob a qual não incide imposto direto). A taxa de conveniência é de R$10,00 para moradores da cidade do evento e R$30,00 para moradores de outras cidades. Não existe acúmulo de descontos (clientes assíduos menores de 25 anos recebem apenas 50% de desconto). Os ingressos não podem ser vendidos a clientes com idade inferior a idade mínima requisitada do evento, nem em quantidade maior que a quantidade de ingressos disponíveis.  
+
+O sistema deve permitir executar diariamente uma função que lista todos os ingressos vendidos em uma dada data, para que sejam repassados à empresa de logística. O sistema também deve permitir executar a verificação de retirada de ingressos (seja no local ou para entrega em casa) por seu número de identificação, assim como permitir alterar essa condição. O sistema também deve permitir a produção de um relatório gerencial contendo a quantidade total de ingressos vendidos, a quantia comercializada, o valor de impostos recolhidos e a receita líquida (preço de venda - imposto - frete), segregados por evento e no total, e para eventos ocorridos em um determinado período (considerando apenas o mês e ano; pode simplificar e não precisa implementar aritmética de datas nem usar classe de Java para isso).
+
+Por fim, seu sistema deve possuir um código de exemplo de caso de uso e testes automatizados (preferencialmente usando JUnit) para testar as principais funcionalidades.
+
+Lembre-se de seguir as boas práticas de POO (por exemplo, documentar código,  evitar métodos longos e usar nomes que revelem suas intenções).
+
+Submeta sua solução até o final da prova aqui no edisciplinas na forma de um arquivo compactado .zip ou .jar. 
